@@ -11,23 +11,6 @@ public class Jogo {
         return palavra;
     }
 
-    public Set<Character> getLetrasCertas() {
-        return letrasCertas;
-    }
-
-    public Set<Character> getLetrasErradas() {
-        return letrasErradas;
-    }
-
-    public int getTentativasRestantes() {
-        return tentativasRestantes;
-    }
-
-    public void decrementarTentativas() {
-        tentativasRestantes--;
-    }
-
-
     public Jogo(Jogador jogador, String palavraEscolhida) {
         this.jogador = jogador;
         this.palavra = new Palavra(palavraEscolhida);
